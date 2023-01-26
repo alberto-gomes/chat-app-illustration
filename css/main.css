@@ -19,7 +19,6 @@ html {
 section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
     align-items: center;
     gap: 100px;
 }
@@ -69,7 +68,7 @@ h2 {
     background-color: hsl(270, 20%, 96%);
     border: 10px solid white;
     border-radius: 20px;
-    width: 35%;
+    width: 17rem;
     justify-self: right;
     margin-right: 25px;
     box-shadow: 0px 10px 48px 11px rgb(0 0 0 / 10%);
@@ -78,8 +77,8 @@ h2 {
 
 .element-purple {
     position: absolute;
-    height: 42vw;
-    width: 36.5%;
+    height: 37rem;
+    width: 30rem;
     top: 0;
     left: -60px;
     border-bottom-right-radius: 290px 290px;
@@ -91,13 +90,13 @@ h2 {
 .element-gray {
     position: absolute;
     display: flex;
-    height: 47vw;
-    width: 20%;
+    height: 37rem;
+    width: 30rem;
     top: 10%;
     right: 0;
     margin-left: 15%;
-    border-top-right-radius: 100px 30px;
-    border-top-left-radius: 215px 222px;
+    border-top-right-radius: 290px 290px;
+    border-top-left-radius: 290px 290px;
     z-index: 1;
     background: linear-gradient(#f7f5fa,#f9f4fa);
 }
@@ -303,7 +302,7 @@ input[type=text]::placeholder {
     z-index: 2;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 999px) {
 
     .text-right {
         text-align: center;
@@ -314,27 +313,29 @@ input[type=text]::placeholder {
     section {
         grid-template-columns: 1fr;
         gap: 0;
-        height: 90vh;
         }
+    
+    .text { 
+        width: 100%;
+        margin-top: 4rem;
+    }
 
     .phone {
-        width: 65%;
         margin: 0;
         justify-self: center;
     }
 
     .element-purple {
-        height: 125vw;
-        width: 65%;
+        width: 20rem;
         border-bottom-left-radius: 0;
     }
 
     .element-gray {
-        top: auto;
-        bottom: 0;
-        border-top-right-radius: 0;
-        height: 160vw;
-        width: 50%;
+        display: none;
     }
     
+}
+
+.attribution {
+    margin-top: 3rem;
 }
